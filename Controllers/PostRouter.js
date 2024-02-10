@@ -22,4 +22,11 @@ router.get("/viewall",async(req,res)=>{
     res.json(result)
 })
 
+router.post("/viewmypost",async(req,res)=>{
+    let input=req.body
+    let data=await postModel.find(input)
+    res.json(data)
+})
+
+
 module.exports=router
