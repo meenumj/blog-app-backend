@@ -22,4 +22,7 @@ router.get("/viewall",async(req,res)=>{
     res.json(result)
 })
 
+
+
+
 module.exports=router
